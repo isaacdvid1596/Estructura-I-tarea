@@ -1,0 +1,55 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int userResponse=0;
+
+    cout<<"Bienvenido al banco central , para crear una cuenta \
+    presiona 1 <no se puede crear una cuenta con menos de Lps1000> , presiona 2 para hacer un retiro" <<endl;
+    cin>>userResponse;
+
+
+    int monto=0;
+    int retiro=0;
+    int total=monto;
+
+
+    switch(userResponse)
+    {
+    case 1:
+
+        cout<<"Gracias por crear una cuenta con nosotros , ingresa el monto a depositar"<<endl;
+        cin>>monto;
+
+        if(monto<1000)
+        {
+            cout<<"para crear una cuenta , tienes que teer al menos Lps.1000 depositados"<<endl;
+        }
+        else
+        {
+            cout<<"Gracias por realizar tu deposito , tu numero de cuenta es 12345"<<endl;
+        }
+        break;
+
+    case 2:
+
+        cout<<"Ingresa el monto a retirar"<<endl;
+        cin>>retiro;
+
+        if(retiro>=total)
+        {
+            cout<<"no puedes quedar sin dinero en el manco"<<endl;
+        }
+        else
+        {
+            cout<<"buen dia!"<<endl;
+        }
+
+        break;
+    }
+
+
+
+}
