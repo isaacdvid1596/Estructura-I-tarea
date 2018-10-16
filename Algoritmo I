@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+    cout<<"Bienvenido al parque de diversiones, ingresa tu edad"<<endl;
+    int edad=0;
+    cin>>edad;
+
+    if(edad<13)
+    {
+        cout<<"recibes descuento de 50%!"<<endl;
+    }
+    else if((edad>=13) && (edad<=19))
+    {
+        cout<<"recibes descuento de 25%"<<endl;
+    }
+    else if(edad>=20)
+    {
+        cout<<"no recibes ningun descuento"<<endl;
+    }
+
+    return 0;
+}
